@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://demo.tutorialzine.com/2015/04/material-design-stopwatch-alarm-and-timer/ -->
+<html class="timer-mode"><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Material Design Stopwatch, Alarm and Timer</title>
+
+    <link type="text/css" rel="stylesheet" href="./Material Design Stopwatch, Alarm and Timer_files/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="./Material Design Stopwatch, Alarm and Timer_files/styles.css">
+	<link type="text/css" rel="stylesheet" href="./Material Design Stopwatch, Alarm and Timer_files/jquery.timepicker.css">
+
+</head>
+<body>
+
+<div class="wrapper" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+	<header class="switch-clocks z-depth-1">
+		<a class="alarm waves-effect">Alarm</a>
+		<a class="stopwatch waves-effect">Stopwatch</a>
+		<a class="timer waves-effect accent-4">Timer</a>
+	</header>
+
+	<div class="app">
+
+		<div class="container alarm hidden">
+			<form>
+
+				<div class="control input-field">
+					<input id="alarm-input" type="text" class="validate ui-timepicker-input" autocomplete="off">
+					<label for="alarm-input">Set Time</label>
+				</div>
+
+				<div class="control switch">
+					<label>
+						Off
+						<input type="checkbox" disabled="" id="alarm-btn">
+						<span class="lever"></span>
+						On
+					</label>
+				</div>
+
+				<div class="control checkbox">
+					<input type="checkbox" id="alarm-sounds">
+					<label for="alarm-sounds">Sounds</label>
+				</div>
+
+			</form>
+
+			<div class="clock z-depth-1 inactive">
+				<span>Not Set</span>
+				<div class="overlay waves-effect"></div>
+			</div>
+		</div>
+
+		<div class="container stopwatch">
+			<form>
+				<a id="stopwatch-btn-start" class="waves-effect waves-teal btn-flat">Start</a>
+				<a id="stopwatch-btn-pause" class="waves-effect waves-teal btn-flat">Pause</a>
+				<a id="stopwatch-btn-reset" class="waves-effect waves-teal btn-flat">Reset</a>
+			</form>
+
+			<div class="clock z-depth-1 inactive">
+				<span>0:00:00.0</span>
+				<div class="overlay waves-effect"></div>
+			</div>
+		</div>
+
+		<div class="container timer hidden">
+			<form>
+				<div class="control input-field">
+					<input id="timer-input" type="number">
+					<label for="timer-input" class="">Minutes</label>
+				</div>
+
+				<a class="timer-btn start waves-effect"><i class="mdi-av-play-arrow"></i></a>
+				<a class="timer-btn pause waves-effect"><i class="mdi-av-pause"></i></a>
+				<a class="timer-btn reset waves-effect"><i class="mdi-av-replay"></i></a>
+
+				<div class="control checkbox">
+					<input type="checkbox" id="timer-sounds">
+					<label for="timer-sounds">Sounds</label>
+				</div>
+
+			</form>
+
+			<div class="clock inactive z-depth-1 waves-effect">0:00</div>
+		</div>
+
+
+	</div>
+
+	<div id="times-up-modal" class="modal">
+		<div class="modal-content">
+			<h3>Time's Up!</h3>
+		</div>
+		<div class="modal-footer">
+			<a href="https://demo.tutorialzine.com/2015/04/material-design-stopwatch-alarm-and-timer/#!" class="dismiss-alarm-sounds modal-action waves-effect waves-red btn-flat">Dismiss Alarm</a>
+		</div>
+	</div>
+
+</div>
+
+<footer>
+	<a class="tz" href="https://tutorialzine.com/2015/04/material-design-stopwatch-alarm-and-timer/">Experiment: Material Design Stopwatch, Alarm and Timer</a>
+	<div id="tzine-actions"></div>
+	<span class="close">✕</span>
+</footer>
+
+<script src="./Material Design Stopwatch, Alarm and Timer_files/jquery.min.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/materialize.min.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/jquery.timepicker.min.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/hammer.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/script.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/alarm.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/stopwatch.js.download"></script>
+<script src="./Material Design Stopwatch, Alarm and Timer_files/timer.js.download"></script>
+
+<div class="hiddendiv common"></div></body></html>
