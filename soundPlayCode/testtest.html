@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+    
+    <body>
+       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id = "pompom">PLAY POMP? </button></p>
+       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id = "pomp">PAUSE POMP? </button>
+        <script>
+			let aFile = new Audio('pom.mp3')
+
+			function mouseClick1(event)
+		    {	
+				aFile.volume = 0.3;
+				aFile.play();
+				return }
+				//if the button with the id of cmInch is clicked, the function mouseClick1 will be executed.
+		    pompom.onclick = mouseClick1;
+
+		    function mouseClick2(event)
+		    {
+				aFile.pause();
+				}
+				//if the button with the id of cmInch is clicked, the function mouseClick1 will be executed.
+		    pomp.onclick = mouseClick2;
+        </script>
+    </body>
+</html>
